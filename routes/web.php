@@ -10,3 +10,8 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return 'This is hello page';
 });
+
+Route::get('/greet/{name}', function ($name) {
+    // return 'Hi ' . $name . '!';
+    return "Hi $name !!";
+});
