@@ -11,6 +11,10 @@ Route::get('/hello', function () {
     return 'This is hello page';
 });
 
+Route::get('hallo', function () {
+    return redirect('/hello');
+});
+
 Route::get('/greet/{name}', function ($name) {
     // return 'Hi ' . $name . '!';
     return "Hi $name !!";
