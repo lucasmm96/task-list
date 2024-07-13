@@ -19,3 +19,7 @@ Route::get('/greet/{name}', function ($name) {
     // return 'Hi ' . $name . '!';
     return "Hi $name !!";
 });
+
+Route::fallback(function () {
+    return 'Page not found!!!';
+});
