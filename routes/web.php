@@ -9,10 +9,10 @@ Route::get('/', function () {
 
 Route::get('/hello', function () {
     return 'This is hello page';
-});
+})->name('hello');
 
 Route::get('hallo', function () {
-    return redirect('/hello');
+    return redirect()->route('hello');
 });
 
 Route::get('/greet/{name}', function ($name) {
