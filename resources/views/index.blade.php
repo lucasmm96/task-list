@@ -1,11 +1,9 @@
 <h1> The list of tasks. </h1>
 
 <div>
-    @if(count($tasks))
-        @foreach ($tasks as $task)
-            <div>{{ $task->title }}</div>
-        @endforeach
-    @else
+    @forelse ($tasks as $task)
+        <div>{{ $task->title }}</div>
+    @empty
         <div>There is not any task.</div>
-    @endif
+    @endforelse
 </div>
