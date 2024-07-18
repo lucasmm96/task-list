@@ -56,24 +56,14 @@ $tasks = [
 ];
 
 Route::get('/', function () use ($tasks) {
-    // return view('Main Page');
     return view('index', [
        'tasks' => $tasks
     ]);
-});
+})->name('tasks.index');
 
-Route::get('/hello', function () {
-    return 'This is hello page';
-})->name('hello');
-
-Route::get('hallo', function () {
-    return redirect()->route('hello');
-});
-
-Route::get('/greet/{name}', function ($name) {
-    // return 'Hi ' . $name . '!';
-    return "Hi $name !!";
-});
+Route::get('/{id}', function () {
+    return 'One single task';
+})->name('tasks.show');
 
 Route::fallback(function () {
     return 'Page not found!!!';
