@@ -3,6 +3,7 @@
 @section('title', $task->title)
 
 @section('content')
+    <button><a href="/tasks/{{$task->id}}/edit">Edit</a></button>
     <p>{{ $task->description }}</p>
 
     @if ($task->long_description)
