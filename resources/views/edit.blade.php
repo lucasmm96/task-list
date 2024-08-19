@@ -34,6 +34,6 @@
             <textarea name="long_description" id="long_description" rows="10">{{$task->long_description}}</textarea>
             @error('long_description')<p class="error-message">{{ $message }}</p>@enderror
         </div>
-        <div><button type="submit">Edit Task</button></div>
+        <div><button type="submit">Save</button></div>
     </form>
 @endsection>
