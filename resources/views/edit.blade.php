@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-       <form method="POST" action="{{ route('tasks.update', ['id' => $task->id]) }}">
+       <form method="POST" action="{{ route('tasks.update', ['task' => $task->id]) }}">
         @csrf
         @method('PUT')
         <div>
@@ -34,6 +34,9 @@
             <textarea name="long_description" id="long_description" rows="10">{{$task->long_description}}</textarea>
             @error('long_description')<p class="error-message">{{ $message }}</p>@enderror
         </div>
-        <div><button type="submit">Save</button></div>
+        <div>
+            <button type="submit">Save</button>
+            <button><a href="/tasks">Cancel</a></button>
+        </div>
     </form>
 @endsection>
