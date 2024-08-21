@@ -36,7 +36,7 @@
         </div>
         <div>
             <button type="submit">Save</button>
-            <button><a href="/tasks">Cancel</a></button>
+            <button><a style="text-decoration: none; color:black"href="/tasks/{{ $task->id }}">Cancel</a></button>
         </div>
     </form>
 @endsection>
