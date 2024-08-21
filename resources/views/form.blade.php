@@ -38,7 +38,7 @@
         </div>
         <div>
             <button type="submit">Save</button>
-            <button><a style="text-decoration: none; color:black" href="/tasks">Cancel</a></button>
+            <button><a style="text-decoration: none; color:black" href="{{ route('tasks.index') }}">Cancel</a></button>
         </div>
     </form>
 @endsection>
