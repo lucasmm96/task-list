@@ -3,8 +3,9 @@
 @section('title', 'The list of tasks')
 
 @section('content')
+
     <nav class="mb-4">
-        <a href="{{ route('tasks.create') }}" class="font-medium text-gray-700 underline decoration-pink-500">Add Task</a>
+        <a href="{{ route('tasks.create') }}" class="btn">➕ Add Task</a>
     </nav>
     @forelse ($tasks as $task)
     <div>
