@@ -30,5 +30,4 @@
             <button class="btn" type="submit">❌ Delete</button>
         </form>
     </div>
-    delete
 @endsection
