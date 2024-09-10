@@ -21,7 +21,7 @@
         @endif
     </form>
 
-    <div class="mt-10 flex gap-2 my-auto">
+    <div class="mt-10 flex items-center gap-2">
         <a class="btn" href="{{ route('tasks.index') }}">🏡 Home</a>
         <a class="btn" href="{{ route('tasks.edit', ['task' => $task])}}">✏️ Edit</a>
         <form action="{{ route('tasks.destroy', ['task' => $task ]) }}" method="POST">
